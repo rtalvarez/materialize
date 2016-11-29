@@ -346,7 +346,6 @@
                     autocompleteOption.append('<span>'+ key +'</span>');
                   }
                   $autocomplete.append(autocompleteOption);
-                  $input.data('id', id);
 
                   highlight(val, autocompleteOption);
                 }
