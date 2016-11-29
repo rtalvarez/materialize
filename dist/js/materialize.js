@@ -1,5 +1,5 @@
 /*!
- * Materialize v0.97.9 (http://materializecss.com)
+ * Materialize v0.98.0 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
@@ -3195,7 +3195,7 @@ $(document).ready(function(){
           // Set input value
           $autocomplete.on('click', 'li', function () {
             $input.val($(this).text().trim());
-            $input.trigger('change');
+            $input.trigger('change', { option: $(this) });
             $autocomplete.empty();
           });
         }
